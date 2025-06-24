@@ -25,6 +25,7 @@ A privacy-first voice note-taking app for macOS that runs entirely locally. Capt
 - [Ollama](https://ollama.ai) installed with a language model
 - [Bun](https://bun.sh) runtime
 - Sox for audio recording: `brew install sox`
+- Whisper model will be downloaded automatically on first use
 
 ## Installation
 

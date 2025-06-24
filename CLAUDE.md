@@ -86,3 +86,16 @@ brew install sox
 ```
 
 The app uses `node-record-lpcm16` which requires Sox for recording on macOS.
+
+## Transcription and AI Processing
+
+The app uses:
+- **whisper-node** for local speech-to-text transcription (downloads Whisper model on first use)
+- **Ollama API** for processing transcriptions into bullet points
+
+Make sure Ollama is running:
+```bash
+ollama serve
+```
+
+The app will show notifications if Ollama is not available and will save raw transcriptions as a fallback.
