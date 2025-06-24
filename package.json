@@ -7,7 +7,9 @@
     "dev": "ts-node src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "lint": "oxlint ."
+    "lint": "oxlint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "keywords": [
     "voice",
@@ -28,6 +30,7 @@
     "typescript": "^5.3.3",
     "@types/node": "^20.10.0",
     "ts-node": "^10.9.2",
-    "oxlint": "^0.7.0"
+    "oxlint": "^0.7.0",
+    "prettier": "^3.2.5"
   }
 }

@@ -13,6 +13,7 @@ VoiceWithin is a TypeScript-based menu bar application for macOS that enables vo
 - **Notifications**: node-notifier
 - **Keyboard Hooks**: iohook
 - **Linting**: oxlint with unicorn ruleset
+- **Formatting**: Prettier
 
 ## Project Structure
 ```
@@ -23,6 +24,8 @@ voicewithin/
 ├── package.json      # Project dependencies and scripts
 ├── tsconfig.json     # TypeScript configuration
 ├── oxlintrc.json     # Linting configuration
+├── .prettierrc.json  # Prettier formatting configuration
+├── .prettierignore   # Files to exclude from formatting
 └── .gitignore        # Git ignore rules
 ```
 
@@ -32,6 +35,16 @@ voicewithin/
 - `bun run build` - Compile TypeScript to JavaScript
 - `bun start` - Run the compiled application
 - `bun run lint` - Run oxlint to check code quality
+- `bun run format` - Format code with Prettier
+- `bun run format:check` - Check code formatting
+
+## IMPORTANT: Code Quality Commands
+**After making any code changes, ALWAYS run these commands:**
+```bash
+bun run format
+bun run lint
+```
+These commands are fast and ensure code consistency. Run them every time you modify any TypeScript, JavaScript, or JSON files.
 
 ## Key Features (Planned)
 1. Menu bar integration for quick access
