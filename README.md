@@ -23,7 +23,7 @@ A privacy-first voice note-taking app for macOS that runs entirely locally. Capt
 
 - macOS (Apple Silicon or Intel)
 - [Ollama](https://ollama.ai) installed with a language model
-- Node.js 18+
+- [Bun](https://bun.sh) runtime
 
 ## Installation
 
@@ -40,9 +40,9 @@ A privacy-first voice note-taking app for macOS that runs entirely locally. Capt
    ```bash
    git clone https://github.com/yourusername/voicewithin
    cd voicewithin
-   npm install
-   npm run build
-   npm start
+   bun install
+   bun run build
+   bun start
    ```
 
 3. Grant microphone permissions when prompted

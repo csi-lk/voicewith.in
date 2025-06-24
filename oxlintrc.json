@@ -1,0 +1,14 @@
+{
+  "$schema": "https://oxc-project.github.io/oxlint/v0/schemas/oxlintrc.json",
+  "plugins": ["unicorn", "import"],
+  "extends": ["plugin:unicorn/recommended"],
+  "rules": {
+    "import/no-default-export": "warn"
+  },
+  "ignorePatterns": [
+    "node_modules",
+    "dist",
+    "*.min.js",
+    "coverage"
+  ]
+}
