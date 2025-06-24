@@ -1,9 +1,11 @@
 # VoiceWithin - Voice Note-Taking Menu Bar App
 
 ## Project Overview
+
 VoiceWithin is a TypeScript-based menu bar application for macOS that enables voice note-taking functionality. The app uses Electron's menubar to provide quick access to voice recording and transcription features.
 
 ## Tech Stack
+
 - **Language**: TypeScript
 - **Runtime**: Node.js with Electron
 - **Package Manager**: Bun
@@ -16,6 +18,7 @@ VoiceWithin is a TypeScript-based menu bar application for macOS that enables vo
 - **Formatting**: Prettier
 
 ## Project Structure
+
 ```
 voicewithin/
 ├── src/              # TypeScript source files
@@ -30,6 +33,7 @@ voicewithin/
 ```
 
 ## Development Commands
+
 - `bun install` - Install all dependencies
 - `bun run dev` - Run in development mode with ts-node
 - `bun run build` - Compile TypeScript to JavaScript
@@ -39,14 +43,18 @@ voicewithin/
 - `bun run format:check` - Check code formatting
 
 ## IMPORTANT: Code Quality Commands
+
 **After making any code changes, ALWAYS run these commands:**
+
 ```bash
 bun run format
 bun run lint
 ```
+
 These commands are fast and ensure code consistency. Run them every time you modify any TypeScript, JavaScript, or JSON files.
 
 ## Key Features (Planned)
+
 1. Menu bar integration for quick access
 2. Voice recording with hotkey activation
 3. Real-time transcription using Ollama
@@ -54,6 +62,7 @@ These commands are fast and ensure code consistency. Run them every time you mod
 5. Keyboard shortcuts via iohook
 
 ## Development Guidelines
+
 - Follow TypeScript strict mode conventions
 - Use oxlint with unicorn ruleset for code quality
 - Keep the menu bar UI simple and responsive
@@ -61,8 +70,19 @@ These commands are fast and ensure code consistency. Run them every time you mod
 - Test on macOS for native menu bar compatibility
 
 ## Notes for Future Development
+
 - The main entry point (src/index.ts) sets up the menubar instance
 - Audio recording will need proper permissions on macOS
 - Consider implementing a settings window for configuration
 - Add proper error boundaries for Electron processes
 - Implement secure storage for any user preferences
+
+## Audio Recording Setup
+
+For audio recording to work properly on macOS, you need to install Sox:
+
+```bash
+brew install sox
+```
+
+The app uses `node-record-lpcm16` which requires Sox for recording on macOS.

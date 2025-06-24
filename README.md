@@ -24,13 +24,14 @@ A privacy-first voice note-taking app for macOS that runs entirely locally. Capt
 - macOS (Apple Silicon or Intel)
 - [Ollama](https://ollama.ai) installed with a language model
 - [Bun](https://bun.sh) runtime
+- Sox for audio recording: `brew install sox`
 
 ## Installation
 
-1. Install Ollama and pull a model:
+1. Install required dependencies:
 
    ```bash
-   brew install ollama
+   brew install ollama sox
    ollama pull llama3.1:8b
    ollama serve
    ```

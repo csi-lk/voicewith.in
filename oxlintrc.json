@@ -5,10 +5,5 @@
   "rules": {
     "import/no-default-export": "warn"
   },
-  "ignorePatterns": [
-    "node_modules",
-    "dist",
-    "*.min.js",
-    "coverage"
-  ]
+  "ignorePatterns": ["node_modules", "dist", "*.min.js", "coverage"]
 }
